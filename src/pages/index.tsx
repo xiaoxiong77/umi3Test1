@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import styles from './index.less';
 
-// const TestCom = React.lazy(() => import('app1/TestCom'));
+const TestCom = React.lazy(() => import('app1/TestCom'));
 
 export default function IndexPage() {
   return (
@@ -9,9 +9,9 @@ export default function IndexPage() {
       <div>
         <h1 className={styles.title}>Page index</h1>
       </div>
-      {/* <Suspense fallback="loading">
+      <Suspense fallback="loading">
         <TestCom />
-      </Suspense> */}
+      </Suspense>
     </>
   );
 }

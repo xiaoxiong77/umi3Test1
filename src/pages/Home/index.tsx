@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 
-const TestCom = React.lazy(() => import('app1/TestCom'));
+// const TestCom = React.lazy(() => import('app1/TestCom'));
 
 export default function Home() {
   return (
@@ -8,9 +8,9 @@ export default function Home() {
       <div>
         <h2>Home</h2>
       </div>
-      <Suspense fallback="loading">
+      {/* <Suspense fallback="loading">
         <TestCom />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
